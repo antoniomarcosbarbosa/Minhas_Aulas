@@ -1,0 +1,151 @@
+\chapter{Geometria Analítica}
+
+\section{Distância de Ponto a Reta}
+
+Em um plano cartesiano $XOY$ temos uma reta de equação geral 
+
+\begin{equation}\label{1.1}
+s:ax+by+c=0
+\end{equation}
+
+ e um determinado ponto $P=(x_0,y_0)$. Temos assim que a distância do ponto a reta:
+
+\begin{equation}\label{1.2}
+d(P,r)=\dfrac{|ax_0+b_0+c|}{\sqrt{a^2+b^2}}.
+\end{equation}
+
+Note que a equação da reta $s$ também pode ser representada da fórma 
+
+\begin{equation}
+s:ax+by=-c
+\end{equation}
+
+tal que 
+
+\begin{equation}
+(a,b)\cdot (x,y)=-c
+\end{equation}
+
+é o produto escalar entre o vetor diretor da reta $(a,b)$ e um ponto genérico $(x,y)$. Vendo dessa forma o numerador da equação \eqref{1.2} se torna a aplicação da equação da reta \eqref{1.1} no ponto $P$ dividido pelo módulo do vetor diretor.
+\subsection{Demonstração}
+
+Seja $r:ax+by+c=0$ uma reta e o ponto $P=(x_0,y_0)$ um ponto fora da reta. A distância entre a o ponto e a reta dada será a distância entre o ponto $P$ e algum outro ponto $P_i=(x_i,y_i)$ tal que esse ponto é o ponto da reta $r$ que está mais próximo de $P$. \textbf{A reta determinada pelos pontos $P$ e $P_i$, chamaremos de reta $s$ é perpendicular com a reta $r$}\footnote{Demonstrar isso}.
+
+A distância entre o ponto e a reta se resume a distância entre os pontos $P$ e $P'$ que é dado por
+
+\begin{equation}\label{1.5}
+d(P_i,P)=\sqrt{(x_i-x_0)^2+(y_i-y_0)^2}
+\end{equation}
+
+Como dois vetores ortogonais tem produto escalar seja nulo teremos que o vetor diretor da reta $s$ é $(b,-a)$ (verifique).
+
+A equação da reta $s$ será dada por $(b,-a)(x,y)+d=0$ ou ainda
+
+\begin{equation}\label{1.6}
+    s:bx-ay+d=0.
+\end{equation}
+
+Sabendo disso vamos em busca de determinar as coordenadas de $P_i$.
+
+Como a reta $s$ passa pelo ponto $P$, logo 
+
+\begin{equation}\label{1.7}
+\begin{split}
+bx_0-ay_0+d&=0\\
+    d&=ay_0-bx_0
+\end{split}
+\end{equation}
+
+Guarde bem esse resultado. Utilizaremos $d$ durente os cálculo e quando for necessário iremos substituir pelo seu valor acima.
+
+Como $r$ e $s$ são perpendiculares e se interseccionam-se no ponto $P_i$, temos
+
+\begin{equation}\label{1.8}
+\begin{cases}
+ax+by+c&=0\\
+bx-ay+d&=0.
+\end{cases}    
+\end{equation}
+
+Isolando o valor de $y$ da segunda equação e substituindo na primeira, temos
+
+\begin{equation}\label{1.9}
+    ax+b\dfrac{bx+d}{a}+c=0.
+\end{equation}
+
+Multiplicando tudo por $a$ e isolando $x$ do lado esquerdo da igualdade teremos
+
+\begin{equation}\label{1.10}
+    x=-\dfrac{ac+bd}{a^2+b^2}.
+\end{equation}
+
+Substituindo o valor de $x$ encontrado na primeira equação do sistema \eqref{1.8} e isolando o valor de $y$, temos
+
+\begin{equation}\label{1.11}
+    y=\dfrac{ad-bc}{a^2+b^2}.
+\end{equation}
+
+Assim o ponto de intersecção entre as retas é
+
+\begin{equation}\label{1.12}
+P_i=\left(-\dfrac{ac+bd}{a^2+b^2},\dfrac{ad-bc}{a^2+b^2} \right).
+\end{equation}
+
+Substituindo as coordenadas de $P=(x_0,y_0)$ e de $P_i$ em na equação \eqref{1.5} teremos
+
+\begin{equation}
+d(P,P_i)=\sqrt{\left(x_0+\dfrac{ac+bd}{a^2+b^2} \right)^2+\left(y_0-\dfrac{ad-bc}{a^2+b^2} \right)^2}.
+\end{equation}
+
+Substituindo agora o valor de $d$ da equação \eqref{1.7} teremos
+
+\begin{equation}
+d(P,P_i)&=\sqrt{\left(x_0+\dfrac{ac+b(ay_0-bx_0)}{a^2+b^2} \right)^2+\left(y_0-\dfrac{a(ay_0-bx_0)-bc}{a^2+b^2} \right)^2}.
+\end{equation}
+
+Efetuando a distribuição dentro de cada parentesis e deixando tudo dentro de cada grande parêntesis em uma única fração poderão ser anulados alguns termos. Após isso note que o primeiro grande parêntesis permite colocar $a^2$ em evidência e no segundo $b^2$ permitindo ainda um agrupamento posterior $a^2+b^2$.
+
+Com duas ou três manipulações algébricas pode-se converter o resultado na equação \eqref{1.2}. Será deixado como atividade para o leitor.
+
+
+
+
+
+\section{Posições Relativas de uma Reta e uma Circunferência}
+
+Imagine um circulo que tem o centro em $P$ e um certo raio $r$. Para todos os pontos que estão dentro do círculo sabemos que sua distância em relação a $P$ é menor que o raio. Para os que estão fora sabemos que sua distância em relação a $P$ é maior. Para os que estão exatamente sobre o círculo sua distância é exatamente igual ao raio.
+
+Imagine agora uma série de círculos concentricos em $P$ com diversos raios. Agora imagine que uma reta $s$ está posicionado no mesmo plano que $P$ e dos círculos concêntricos. Note que alguns círculos não tocam a reta, isso significa que todos os pontos da reta estão mais distântes de $P$ que o seu raio. Note também que para alguns círculos maiores que intersectam a reta que os pontos da reta fora do círculo tem distância maior em relação a $P$ que o raio e que os que estão interiores ao círculo tem distância menor que o raio e que os dois pontos de intersecção entre o círculo e o raio tem a mesma distância que o raio.
+
+Vamos chamar de $r_1$ o raio do círculo que não toca da reta e $r_2$ o raio do círculo que intersecta a reta em dois pontos. O raio do círculo que toca a reta em um único ponto (raio do circulo tangente a reta) é menor que $r_1$, está entre $r_1$ e $r_2$ ou é maior que $r_2$?
+
+Ora, se for menor que $r_1$ o círculo não tocará na reta, se for maior que $r_2$ ele sempre continuará tocando em dois pontos. Sobra-nos apenas uma opção, a de que o raio do círculo em questão é maior que o do que não toca e menor do que toca em dois pontos.
+
+Seja $r$ a reta que contém o raio do círculo tangente a reta $s$ ele irá conter o ponto $P$. Essa reta será tangente a 
+
+\section{Ângulo entre vetores}
+
+O ângulo entre os vetores $\vec{u}$ e $\vec{v}$ é o mesmo que o ângulo entre seus versores, já que seus versores tem a mesma dimensão e sentido. Logo
+
+\begin{equation}\label{1.13}
+\cos \theta =\dfrac{\vec{u}\cdot \vec{v}}{||\vec{u}||\cdot ||\vec{v}||}.
+\end{equation}
+
+Como temos que o cosseno se limita ao intervalo $[-1,1]$, ou seja $|\cos \theta |\leq 1$, temos que
+
+\begin{equation}\label{1.14}
+||\vec{u}||\cdot ||\vec{v}||\leq \vec{u}\cdot \vec{v}
+\end{equation}
+
+que é a desigualdade de Cauchy-Shwarzs. Nós a utilizamos para demonstrar a desigualdade triangular.
+
+Olhando novamente para a equação \eqref{1.13} temos o produto escalar de dois versores. Ou seja
+
+\begin{equation}\label{1.15}
+\begin{split}
+\cos \theta&=\dfrac{\vec{u}}{||\vec{u}||}\cdot \dfrac{\vec{v}}{||\vec{v}||}\\
+&=\hat{u}\cdot \hat{v}
+\end{split}
+\end{equation}
+
+\section{Alinhamento de três pontos}

@@ -1,0 +1,166 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Cálculo 4}
+%http://www.ime.unicamp.br/~valle/PastCourses/MA211_14/Aula21.pdf
+\section{Cálculo Vetorial}
+
+%http://petemb.ufsc.br/files/2015/03/Apostila-Calculo-Vetorial-PROTEGIDA.pdf
+
+\section{Integrais de Linha}
+
+É a integral da componente tangencial da força. 
+https://youtu.be/BZItyzKGmi4 por volta dos 21 minutos.
+
+As integrais de linha tem um papel fundamental na Física. Ela é responsável por generalizar as integrais que normalmente fazemos sobre os eixos para curvas espaciais.
+
+Devido essa ``flexibilidade'' de se modificar o lugar onde se está integrando podemos encontrar contribuições infinitesimais de massa que uma função densidade dá a medida que percorremos um fio; podemos calcular o trabalho que uma força que varia a medida que age em um meio.
+
+
+
+\theoremstyle{definition}
+\newtheorem{defi}{Definição}
+
+\begin{defi}%Integral de linha normal
+Se $F$ é definida sobre uma curva lisa $C$ dada pelas Equações $$x=x(t), y=y(t), a\leq t\leq b,$$ então a \textbf{integral de linha de $f$ sobre $C$} e 
+
+\begin{equation}\label{16.1}
+\int_C f(x,y)ds =\int_a^b f(r(t)) |r'(t)|dt= \int_a^b f(x(t),y(t))\sqrt{\left( \dfrac{dx}{dt} \right)^2+\left( \dfrac{dy}{dt} \right)^2} dt
+\end{equation}
+
+\end{defi}
+
+
+
+
+\begin{defi}%Integral de linha em campos vetoriais
+Seja \textbf{F} um campo vetorial contínuo definido sobre uma curva lisa $C$ dada pela função vetorial $$r(t), a\leq t\leq b.$$ Então, a \textbf{integral de linha de F ao longo de C} é $$\int_C F \cdot dr = \int_a^b F(r(t))\cdot r'(t) dt$$
+\end{defi}
+\section{Teorema Fundamental das Integrais de Linha}
+
+\section{Campos Vetoriais Conservativos}
+
+\section{Mudanças de Variáveis em Integrais Múltiplas}
+
+\section{Superfícies Parametrizadas}
+
+\section{Integrais de Superfície}
+
+\section{Teorema de Green}
+
+\section{Rotacional e Divergente}
+
+\subsection{Operador Nabla}
+
+\subsection{Divergente como produto Escalar}
+
+\subsection{Rotacional como Produto Vetorial}
+%https://youtu.be/GGzFH3rYUKI
+
+\section{Teorema de Stokes}
+
+
+
+\section*{Estratégias e Exercícios}
+
+Os passos para a resolução são basicamente quatro:
+
+1- Divida a sua curva se necessário em trechos que sejam integráveis ou que a parametrização seja idêntica;
+
+Semelhantemente quando falamos de vetores,  quando vamos de um ponto A para um ponto C diretamente equivale a ir de A para B e depois para C, uma integral de linha não se importa se você a integra na curva inteira ou apenas em uma parte por vês e depois some todas as integrais no final.
+
+Isso é uma grande mão na roda, pois para que integramos precisamos que a curva seja lisa (não tenha descontinuidades, não tenha quinas nem cúspides). Caso a curva original tenha algum(ns) desses defeitos basta separá-la em seus trechos que não tem.
+
+Outra coisa que pode fazer com que a divisão da curva em outras é a parametrização. Integrar sobre um arco de uma função trigonométrica é diferente que integrar sobre um segmento de reta. Logo se sua curva for composta por pedaços de gráficos recomenda-se que divida ela em trechos de maneira que cada trecho se parametrize apenas por uma qualidade de função.
+
+2- Encontre uma parametrização
+
+Nesse momento suponho que você já tenha sua integral separada de forma que a curva tenha apenas uma parametrização. Nesse momento devemos identificar qual o tipo de parametrização necessário naquele trecho da nossa curva.
+
+3- Reescreva sua função (densidade/força/ sei lá o que.) em relação ao parâmetro.
+
+4- Encontre o comprimento da curva em relação ao parâmetro.
+
+\begin{enumerate}
+\item Cálcule a integral de linha, onde $C$ é uma curva dada.
+\end{enumerate}
+
+\begin{enumerate}
+\item[1.] $\int_C y^3 ds, \qquad C:x=t^3, y=t, 0\leq t \leq 2$
+
+\begin{equation}\label{16.2}
+\begin{split}
+\int_C y^3 ds&=\int_0^2 t^3 \sqrt{(3t^2)^2+1} dt\\
+&=\int_0^2 t^3 \sqrt{9t^4+1} dt
+\end{split}
+\end{equation}
+
+Tomando $u=9t^4+1$, temos que $du=36 t^3 dt$ e que para $t=0$ temos $u=1$ e para $t=2$ temos $u=145$. Assim
+
+\begin{equation}\label{16.3}
+\begin{split}
+&=\dfrac{1}{36}\int_1^{145} u^{\frac{1}{2}} du\\
+&=\dfrac{1}{36} \left[ \dfrac{2}{3} u^\frac{3}{2} \right]_1^{145}
+\end{split}
+\end{equation}
+
+\end{enumerate}
+
+Basicamente o que foi feito foram seguir passo a passo as seguintes orientações abaixo.
+
+\begin{enumerate}
+\item Reescreva:
+$$f(x,y)=f(x(t),y(t))$$
+Basta notar como os componentes ortogonais da função foram parametrizados e reescrevê-los em função desse parâmetro. Essa parte é responsável pela "densidade" ao decorrer da linha.
+
+\item Determine: $$ds=\sqrt{\left(\dfrac{dx}{dt} \right)^2+\left(\dfrac{dy}{dt} \right)^2} dt$$
+Basicamente se calculará as derivadas parciais das coordenadas ortogonais em relação ao parâmetro \textit{t} e depois tomará a raiz quadrada da soma de seus quadrados. Isso corresponderia ao módulo da derivada do parâmetro, ou seja $|r'|$. Essa parte é responsável por corrigir o ``tamânho''.
+\end{enumerate}
+
+Algo importante de nota é a forma com que a curva $C$ é definida. Aqui nessa questão ela foi dada em forma já parametrizada. Podemos ter algumas cituações difetentes para parametrizar a curva:
+
+\begin{itemize}
+\item Segmento entre dois pontos;
+\item Parte de círculos;
+\item Arco de uma curva entre dois pontos determinados;
+\item Composição dos itens anteriores
+\end{itemize}
+
+Eventualmente precisamos dividir a curva em partes para poder calcular sua integral. Isso implica em fazer uma integral em cada local.
+
+\begin{enumerate}
+\item[2.] $\int_C xy ds \qquad C:x=t^2, y=2t, 0 \leq t \leq 1$
+\end{enumerate}
+
+Nessa segunda questão temos uma curva ainda determinada de forma paramétrica. Seguindo os dois passos indicados acima podemos encontrar rapidamente a integral que devemos calcular.
+
+\begin{enumerate}
+\item[3.] $\int_C xy^4 ds \qquad C:\mbox{a metade direita do círculo } x^2+y^2=16.$
+\end{enumerate}
+
+Aqui já encontramos um novo desafio. A curva dada não está parametrizada, teremos que fazer isso. Como a curva é uma parte de um cúrculo poderemos utilizar a parametrização básica abaixo: $$r(t)=\begin{cases} x=cos(t)\\ y=sin(t) \end{cases}, \frac{\pi}{2}\leq t \leq -\frac{\pi}{2}$$
+
+Aqui apenas manipulamos os valores possíveis para $t$ para que ele corresponda a parte direita do círculo.
+
+Aqui tivemos que acrescentar uma ação antes das outras duas enunciadas nos comentários da primeira questão. Os passos agora são três.
+
+\begin{enumerate}
+\item Encontre uma parametrização para a curva $C$ de forma que ela fique bem definida (seja percorrida apenas uma vês quando $t$ varia de $a$ para $b$);
+\item Reescrever a função (dencidade?) $$f(x,y)=f(x(t),y(t))$$;
+\item Determine: $$ds=\sqrt{\left(\dfrac{dx}{dt} \right)^2+\left(\dfrac{dy}{dt} \right)^2} dt$$
+\end{enumerate}
+
+\begin{enumerate}
+\item[4.] $\int x\sin y ds, S:\mbox{ Segmento de reta entre os pontos }(0,3), (4,6) $
+\end{enumerate}
+
+Vamos encontrar uma parametrização para a curva dada. Como ela é um segmento de reta ela pode ser parametrizada pela equação da reta. Basta limitá-la em seu domínio de forma a ir apenas entre os pontos interessantes.
+
+$$r(t)=(0,3)+t(4,6)=(4t,3+6t); 0\leq t\leq 1$$
+
+Com isso cumprimos nossa primeira etapa. Agora vamos reescrever a função conforme a parametrização encontrada.
+
+$$f(x,y)=x\sin y \rightarrow f(r(t))=4t \sin (3+6t) $$
+
+O próximo passo é determinar quem é $ds/dt$.
+
+$$ds=\sqrt{\left( \dfrac{dx}{dt} \right)^2+\left( \dfrac{dy}{dt} \right)^2}dt=\sqrt{4^2+6^2}dt=2\sqrt{13}dt$$
+

@@ -1,0 +1,174 @@
+\chapter{Cálculo 1}
+\section{Limites}
+
+%http://www.sistemaaguia.com.br/downloads/24-aplim.pdf
+%http://www.dm.ufscar.br/profs/sampaio/calculo1_aula04.pdf
+%http://www.dm.ufscar.br/profs/sampaio/calculo1_aula05.pdf
+%http://sinop.unemat.br/site_antigo/prof/foto_p_downloads/fot_7567aula_1_-_limites_-_1_slide_pob_folha_pdf.pdf
+%http://www.im.ufrj.br/~puignau/Calculo1/exos/2011-2/capitulo4.pdf
+
+\section{Derivadas}
+
+\subsection{Velocidade}
+A velocidade é a razão entre a distância percorrida entre dois pontos e o tempo gasto. Quando dirigimos dificilmente mantemos a mesma velocidade, logo temos apenas a velocidade média.
+
+GRÁFICO DA FUNÇÃO HORÁRIA DAS POSIÇÕES.
+
+A VELOCIDADE É O COEFICIENTE DA INCLINAÇÃO DA RETA TANGENTE
+
+
+
+A derivada pode ser compreendida como a inclinação da reta tangente de um ponto.
+
+
+Equação da reta: $y-y_0=m(x-x_0)$
+
+Inclinação da reta: $m=\dfrac{y-y_0}{x-x_0}$
+
+Inclinação entre dois pontos de uma curva: $m_{AB}=\dfrac{f(x)-f(x_0)}{x-x_0}$
+
+Inclinação da reta no ponto tangente: $m=\lim_{x\rightarrow x_0} =\dfrac{f(x)-f(x_0)}{x-x_0}$
+
+Seja $h=x-x_0$, temos:
+\begin{equation}\label{5.1}
+    f'(x)=\lim_{h \rightarrow 0}\dfrac{f(x+h)-f(x)}{h}
+\end{equation}
+
+\subsection{Primeiras consequências}
+
+DERIVADA DE CONSTANTE É ZERO
+
+DERIVADA DE UMA FUNÇÃO VEZES UMA CONSTANTE É A CONSTANTE VEZES A DERIVADA DA FUNÇÃO
+
+A DERIVDA DA SOMA(OU DIFERENÇA) ENTRE DUAS FUNÇÕES É A SOMA (OU DIFERENÇA) ENTRE SUAS DERIVADAS
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|c|c|}
+    \hline
+    Função & Derivada \\
+    \hline
+    $x^n$  & $nx^{n-1}$ \\
+    \hline
+    $\sin x $ & $\cos x$\\
+    \hline
+    $\cos x$ & $-\sin x$\\
+    \hline
+    $a^x$ & $a^x \ln a$\\
+    \hline
+    $\ln x$ & $1/x$ \\
+        \hline
+    \end{tabular}
+    \caption{Tabela de derivadas}
+    \label{tab:my_label}
+\end{table}
+
+\section{Derivada de função exponencial}
+
+Seja $f(x)=x^n$ temos.
+
+Substituindo nossa função na equação $\eqref{5.1}$, teremos
+
+\begin{equation}\label{5.2}
+    \lim_{h \to 0} \dfrac{(x+h)^n-x^n}{h}
+\end{equation}
+
+\section{Derivada de função exponencial}
+
+Seja $f(x)=a^x$ com $a>0$ e $a\not= 1$, vamos encontrar a sua derivada.
+
+\begin{equation}\label{5.3}
+\begin{split}
+f'(x)&=\lim_{h \to 0}\dfrac{f(x+h)-f(x)}{h}\\
+&=\lim_{h \to 0}\dfrac{a^{x+h}-a^h}{h}\\
+&=\lim_{h \to 0}\dfrac{a^x\cdot a^h-a^x}{h}\\
+&=\lim_{h \to 0}\dfrac{a^x(a^h-1)}{h}\\
+&=\lim_{h \to 0}\dfrac{a^x(a^h-1)}{h}\\
+&=a^x\cdot \lim_{h \to 0}\dfrac{a^h-1}{h}
+\end{split}
+\end{equation}
+
+Nota-se que a derivada de uma função exponencial é um múltiplo da própria função. Será que existe uma função exponencial cuja derivada seja ela própria? Para que isso ocorra basta que o limite em questão seja $1$.
+
+\begin{equation}\label{5.4}
+\begin{split}
+\lim_{h \to 0}\dfrac{a^h-1}{h}&=1\\
+\lim_{h \to 0}a^h-1&=h\\
+\lim_{h \to 0}a^h&=h+1\\
+a&=\lim_{h \to 0}(h+1)^{\frac{1}{h}}
+\end{split}
+\end{equation}
+
+Fazendo $\dfrac{1}{h}=n$ teremos
+
+\begin{align}\label{5.5}
+a&=\lim_{n\to\infty}\left(1+\dfrac{1}{n}\right)^n
+\end{align}
+
+Esse limite converge para um número irracional que será conhecido como número de Euler e será representado por $e$.
+
+Observe que a derivada genéria de uma função exponencial é $(a^x)'=a^x \ln (a)$ e que np caso específico de $a=e$ teremos $(e^x)'=e^x\ln(e)$. Mas como $\ln(e)=1$ voltamos para $(e^x)'=e^x$.
+
+Outra coisa a considerar é que o limite que aparece em (5.6) identifica o $\ln(a)$. Ou seja
+
+$$ln(a)=\lim_{h \to 0}\dfrac{a^h-1}{h}$$
+
+\section{Técnicas de Derivação}
+
+\subsection{Regra do produto}
+$$(ab)'=a'b + b'a$$
+
+
+\begin{align}\label{5.6}
+    \lim_{h \rightarrow 0} \dfrac{d (f(x)g(x))}{dx}&=\lim_{h\rightarrow 0} \dfrac{f(x+h)g(x+h)-f(x)g(x)}{h}
+\end{align}
+
+Tomando $f(x+h)=f(x)+\delta f$ e $g(x+h)=g(x)+\delta g$, temos
+
+\begin{equation}\label{5.7}
+\begin{split}
+&=\lim_{x\rightarrow 0} \dfrac{(f(x)+\delta f)(g(x)+\delta g)-f(x)g(x)}{h}\\
+&=\lim_{x\rightarrow 0} \dfrac{f(x)\delta g +g(x)\delta f + \delta f \delta g}{h}
+\end{split}
+\end{equation}
+
+Como as variações $\delta f$ e $\delta g$ são muito pequenas podemos ignorá-las. Dessa forma basta devolver a anotação que utiliza o delta para a anterior e verificar a afirmação dada inicialmente.
+
+\subsection{Regra da Cadeia}
+
+
+\begin{equation}\label{5.8}
+f(g(x))'=f'(g(x))g'(x)
+\end{equation}
+
+
+
+\subsection{Regra do Quociente}
+
+\begin{equation}\label{5.9}
+\left( \dfrac{a}{b} \right)'=\dfrac{b'a-a'b}{b^2}
+\end{equation}
+
+
+Utilizando:
+
+\begin{itemize}
+\item $\frac{f(x)}{g(x)}=f(x)g(x)^{-1}$
+\item $\frac{d(f(x))}{dx}=f'(x)$
+\item $(u^{-1})'=-u^{-2}$
+\end{itemize}
+
+\begin{align*}
+    \dfrac{d(f(x)[g(x)]^{-1})}{dx}&=\dfrac{d(f(x))}{dx}[g(x)]^{-1}+\dfrac{d([g(x)]^{-1})}{d(x)}f(x)
+\end{align*}
+
+Ou ainda
+
+\begin{align*}
+    &=f'(x)g(x)^{-1}+(g(x)^{-1})'f(x)\\
+    &=f'(x)g(x)^{-1}-g(x)^{-2}g'(x)f(x)\\
+    &=\dfrac{f'(x)}{g(x)}-\dfrac{g'(x)f(x)}{g(x)^2}
+\end{align*}
+
+Multiplicando a primeira fração por $g(x)$ e subtraindo a segunda obtemos o que estavamos procurando.
+

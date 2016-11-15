@@ -1,0 +1,71 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Divisibilidade}
+\section{Contextualizando Multiplos e Divisores com áreas}
+
+Os múltiplos de um número podem ser compreendidos como áreas de retângulos cujo um dos lados é o número de quem estamos procurando os divisores e o outro são os valores por quem estamos mutiplicando para encontrar os múltiplos. Por exemplo, imaginem que estamos procurando os múltiplos de 7.  Basta desenhar um retângulo em que um lado é 7 e o outro lado varia entre os valores inteiros. Por exemplo.
+\begin{figure}[h]
+    \centering
+    \begin{tikzpicture}
+ \draw[blue] (0,0) rectangle (10,7);
+%\foreach \x in {2,3,4,5,6,7,8,9,10,11,12,13}  {\draw[blue] (\x,1) -- (\x,7)}% \node [above] ($\x$) at (\x+.5,7);
+\draw[blue] (1,0)--(1,7);
+\node[above] (1) at (.5,7) {$1$};
+%\draw[blue] (2,0)--(2,7);
+\draw[blue] (3,0)--(3,7);
+\node[above] (2) at (2,7) {$2$};
+%\draw[blue] (4,0)--(4,7);
+%\draw[blue] (5,0)--(5,7);
+\draw[blue] (6,0)--(6,7);
+\node[above] (3) at (4.5,7) {$3$};
+%\draw[blue] (7,0)--(7,7);
+%\draw[blue] (8,0)--(8,7);
+%\draw[blue] (9,0)--(9,7);
+
+\node[above] (4) at (8,7) {$4$};
+ 
+\node [left] (A) at (0,3.5) {$7$}; %nó A
+ \end{tikzpicture}
+    \caption{Múltiplos e Áreas}
+    \label{fig:my_label}
+\end{figure}
+
+
+A área do primeiro retângulo corrsponde ao produto do seu comprimento e de sua altura é $7$, o do segundo é $14$. Assim temos a sequência dos quatro primeiros múltiplos de 7.
+
+Quais são esses múltiplos? Como posso obter os $10$ primeiros múltiplos de 7 combinando as áreas dos retângulos acima?
+
+Façam a mesma coisa para achar $10$ primeiros múltiplos de $5,6,8$ e $9$;
+
+\subsection{Múltiplos e Tabuada}
+
+Notem que obter os múltiplos de um número equivale a fazer a sua tabuada. Note que a tabuada do $7$ é constituida dos $10$ primeiros múltiplos de $7$. A mesma coisa acontece para os $10$ primeiros múltiplos de $1, 2, 3, \dots$.
+
+Como posso obter a tabuada de um número apartir do conceito de área como foi mostrado nesse caso para os múltiplos?
+
+\section{Múltiplos e divisores}
+\begin{multicols}{2}
+Os números $0,1,2,3,$ etc. serão chamados aqui de números naturais. O conjunto dos números naturais será denotado por $\mathbb{N}$ e escreveremos $n\in \mathbb{N}$ para indicar que o número \textit{n} é um número natural.
+
+Vamos começar observando algumas divisões.\\
+
+\textbf{Exemplo 1}
+
+\begin{center}
+  %  \begin{tabular}{p{15mm}p{15mm}p{15mm}p{15mm}}
+    \begin{tabular}{p{15mm} p{15mm} p{15mm} p{15mm}}
+    \begin{array}{r|r} 14 & 5 \\ \cline{2-2} -10 & 2\\ \cline{1-1} 4 &  \end{array}     & \begin{array}{r|r} 12 & 3 \\ \cline{2-2} -12 & 4\\ \cline{1-1} 0 &  \end{array} & \begin{array}{r|r} 15 & 4 \\ \cline{2-2} -12 & 3\\ \cline{1-1} 3 &  \end{array} & \begin{array}{r|r} 18 & 6 \\ \cline{2-2} -18 & 3\\ \cline{1-1} 0 &  \end{array} \\
+    \end{tabular}
+\end{center}
+
+
+\textit{Valem as seguintes relações para esses números:} $14=5\cdot 2+4$, $12=3\cdot 4 +0$, $15=4\cdot 3 +3$ \textit{e} $18=6\cdot 3 + 0$.
+
+Em geral, em uma divisão, onde $b\not= 0$,
+
+\[\begin{array}{c|c} a & b\\ \cline{2-2} r & q \end{array}\]
+
+\textbf{Exemplo 2} Nas divisões do exemplo 1, os números 14, 12, 15 e 18 são os dividendos, os números 5,3,4 e 6 são os divisores e os números 2,4,3 e 3 são os quocientes e os números 4,0,3 e 0 são os restos das divisões.
+
+Em duas das divisões do exemplo 1, o resto é igual a zero. Quando isso acontece, dizemos que a divisão é exata. Isso quer dizer, por exemplo, que a divisão de 12 por 3 e a divisão de 18 por 6 são exatas, porque os restos nessas divisões são iguais a zero, enquanto as outras duas divisões do exemplo 1 não são exatas, porque têm restos diferentes de zero.
+
+\end{multicols}

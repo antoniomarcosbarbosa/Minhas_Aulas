@@ -1,0 +1,198 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Física 1}
+%http://sites.ifi.unicamp.br/f128/aulas/
+%http://sites.ifi.unicamp.br/f128/ementa/
+\section{Fórmulas Matemáticas}
+
+\subsection{Movimento Retilíneo}
+
+\begin{equation}\label{14.1}
+    s=s_0+vt
+\end{equation}
+
+\subsection{Vetores}
+
+O que é uma grandeza escalar?
+
+Uma grandeza escalar é somente magniture; ela é apenas o número, positivo ou negativo.
+
+O que é uma grandeza vetorial?
+
+Uma grandeza vetorial é a junção de magniture com direção. Por exemplo, um cor se move para a direção sul a 40 km/h tem uma velocidade vetorial de 40km/h apontando para o sul.
+
+SOMA VETORIAL
+
+DESCRIÇÃO DE FUNÇÕES TRIGONOMÉTRICAS NO TRIÂGULO RETÂNGULO
+
+COMPONENTES RETANGULARES DE UM VETOR.
+
+ADIÇÃO DE VETORES POR SUAS COMPONENTES RETANGULARES.
+
+PRODUTO DE VETOR POR ESCALAR
+
+VETORES EM TRÊS DIMENSÕES: PRODUTO ESCALAR E VETORIAL
+
+\subsection{Equilíbio de Forças Concorrentes}
+
+CORDAS, NÓS E POLIAS SEM FRICÇÃO
+
+FRICÇÃO E PLANOS INCLINADOS
+
+\subsection{Cinemática Unidimencinal}
+
+PROBLEMAS DE ACELERAÇÃO CONSTANTE
+
+\begin{exe}
+Um corpo com velocidae inicial de 8m/s se move em linha reta com aceleração constante e percorre 640 metros em 40 segundos. Para o intervalo de 40 segundos, encontre \textbf{a)} a velocidade média, \textbf{b)} a velocidade final, e \textbf{c)} a aceleração.
+\end{exe}
+
+A velocidade varia linearmente em função do tempo.
+\begin{equation}\label{14.2}
+v=v_0+at    
+\end{equation}
+
+Integrando em função do tempo, teremos a função posição para o movimento uniformemente variado é dado por
+
+\begin{equation}\label{14.3}
+x=x_0+v_0t+\frac{1}{2}at^2   
+\end{equation}
+
+\begin{exe}
+Um caminhão começa a se mover com uma aceleração constante de $5m/s^2$. Encontre a velocidade dele e a distância percorrida depois de $4$ segundos.
+\end{exe}
+
+\begin{exe}
+A velocidade de um automóvel cresce uniformemetne de $6.0m/s$ para $20m/s$ enquanto percorria $70$ metros. Encontre a aceleração e o tempo gasto.
+\end{exe}
+
+Isolando o tempo de \eqref{14.2} e substituindo em \eqref{14.3}, teremos
+
+\begin{equation}\label{14.4}
+    v^2=v_0^2+\frac{1}{2}ax
+\end{equation}
+
+que é a fórmula de \textit{Torriceli}. Note que ela não envolve o tempo.
+
+LANÇAMENTO VERTICAL
+
+\subsection{Movimento em Duas e Três Dimensões}
+
+\subsubsection{Movimento Circular Uniforme}
+
+Uma partícula está em \textbf{movimento circular uniforme} se descreve uma circunferência ou um arco de circunferência com velocidade escalar constante (\textit{uniforme}). Embora a velocidade escalar não varie, o movimento é acelerado porque a velocidade muda de direção.
+
+A função posição no círculo de raio $r$ é dado por
+
+\begin{equation}\label{14.5}
+    \vec{r}(\theta) = r(\cos \theta, \sin \theta)
+\end{equation}
+
+Derivando em relação ao tempo, teremos
+
+\begin{equation}\label{14.6}
+    \vec{v}(\theta) = r(-\sin \theta, \cos \theta) \dfrac{d\theta}{dt}
+\end{equation}
+
+Como $\dfrac{d\theta}{dt}=w$ é a velocidade angular, e $v=rw$, temos
+
+\begin{equation}\label{14.7}
+    \vec{v}(\theta) = v(-\sin \theta, \cos \theta)
+\end{equation}
+
+Derivando em relação ao tempo, novamente, temos
+
+\begin{equation}\label{14.8}
+    \vec{a}=-\dfrac{v^2}{r}(\cos \theta, \sin \theta)
+\end{equation}
+
+O que nos dá a velocidade centrípeta vetorial que sempre aponta para o sentro e com módulo $a=\frac{v^2}{r}$.
+
+\subsection{Força e Movimento - I}
+
+\subsubsection{A Segunda Lei de Newton}
+
+A força resultante que age sobre um corpo é igual ao produto da massa do corpo pela sua aceleração.
+
+\begin{exe}
+Como pode haver força de colição entre um carro de massa $m$ e velocidade constante $v$ se o carro não está acelerado?
+\end{exe}
+
+É devido a variação do momento linear que é o produto da massa pela velocidade. Existe energia armazenada em forma de movimento (energia cinética) que é convertida em trabalho durante o impacto e liberada em forma de força. O momento linear é dado por 
+
+\begin{equation}\label{14.9}
+    \vec{P}=m\vec{v}
+\end{equation}
+
+e a segunda lei de Newton assuma a seguinte forma
+
+\begin{equation}\label{14.10}
+    \vec{F}=\dfrac{dP}{dt}
+\end{equation}
+
+\begin{exe}
+Uma força atua em uma massa de $2kg$ e produz uma aceleração de $3m/s^2$. Qual aceleração é porduzida pela mesma força quando atua em corpos de massa \textbf{a)} $1kg$ \textbf{b)} $4kg$? \textbf{c)} Qual é a grandeza dessa força?
+\end{exe}
+
+\subsection{Força e Movimento - II}
+
+\subsubsection{Atrito}
+
+\begin{equation}\label{14.11}
+    f_s=\mu_sF_N
+\end{equation}
+
+\begin{equation}\label{14.12}
+    f_k=\mu_kF_N
+\end{equation}
+
+\subsubsection{Propriedades do atrito}
+\subsubsection{Movimento Circular}
+
+\begin{equation}\label{14.13}
+    F=m\dfrac{v^2}{R}
+\end{equation}
+
+
+
+Movimento circular Uniforme
+$a=\dfrac{v^2}{R}$
+
+$F=\dfrac{mv^2}{R}$
+
+\section{Energia Cinética e Trabalho}
+
+\begin{exe}
+Uma força de $3N$ atua ao longo de $12$ metros na mesma direção da força. Encontre o trabalho executado por ela.
+\end{exe}
+
+Para casos em que a força é contínua, basta multiplicar o seu valor pela distância percorrida e depois observar a direção do movimento, caso tenha sido na mesma direção da força então o trabalho foi positivo, caso contrário seria negativo.
+
+Para casos em que a força é variável então será necessário somar suas contribuições infinitesimais através do percurso. Isso é feito pela seguinte integral
+
+\begin{equation}\label{14.14}
+    W=\int_i^f F ds
+\end{equation}
+
+Substituindo \eqref{14.10} na fórmula acima, temos
+
+\begin{equation}\label{14.15}
+    W=\int_i^f \dfrac{dP}{dt} ds
+\end{equation}
+
+Abrindo a expressão do Momento linear como produto da massa pela velocidade e combinando os $\dfrac{ds}{dt}$ para substituir por $dv$ teremos
+
+\begin{equation}\label{14.16}
+    W=\int_i^f mv dv= \dfrac{mv_f^2}{2}-\dfrac{mv_i^2}{2}
+\end{equation}
+
+que corresponde a variação da Energia Cinética. Perceba que a Energia Cinética é medida em Joules, que é unidade de Trabalho.
+
+Mostre que a fórmula de Torriceli 
+
+\begin{equation}\label{14.17}
+    v_f^2=2as+v_i^2
+\end{equation}
+relaciona
+
+%\end{exe}
+

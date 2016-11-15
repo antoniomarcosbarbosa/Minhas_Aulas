@@ -1,0 +1,62 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Função Modular}
+
+O Módulo é uma entidade matemática conhecida por determinar o comprimento das coisas. Em se tratando do movimento teremos que o modulo corresponderia ao deslocamento de uma partícula P por uma distância percorrida.
+
+Na Geometria Euclidiana Plana a figura que está totalmente entrelaçada com a ideia de distância é o círculo. Nele todos os pontos que estão em sua borda estão a mesma distância do seu sentro. É tanto assim que na Geometria Analítica a equação que define o círculo é definida pela distância entre os seus pontos e o seu centro.
+
+\section{Distância entre dois pontos do Eixo Real}
+\begin{center}
+\begin{tikzpicture}
+\draw[->] (-2,0) -- (2,0)
+\end{tikzpicture}
+\end{center}
+
+\section{A distância e o círculo}
+No plano a distância entre dois pontos é dado por $$d(A,B)=\sqrt{(x_A-x_B)^2+(y_A-y_B)^2}$$
+de forma que os pontos tem a definição abaixo.
+$$A=(x_A, y_A) \mbox{ e }B=(x_B, y_b)$$
+
+Seja $C=(a,b)$ o centro de um círculo e \textit{r} o ráio desse círculo, temos que qualquer ponto $P=(x,y)$ sobre o círculo está a uma distância \textit{r} do centro. Ou seja:
+\begin{align*}
+ \sqrt{(x-a)^2+(y-b)^2}&=r\\
+ (x-a)^2+(y-b)^2&=r^2
+\end{align*}
+
+Para entender bem essa fórmula basta pensar que a distância horizontal $(x_a)$ e a distância vertical $(y-b)$ são catetos de um triângulo retângulo em que \textit{r} é a hipotenúsa. Temos assim apenas uma simples aplicação do Teorema de Pitágoras.
+
+\section{Distância em dimenções}
+
+Note que se limitarmos o conceito de distância de um certo ponto ao plano (duas dimenções) teremos o círculo. O que ocorreria se colocassemos o mesmo conceito em um universo de três dimenções? Qual a figura geométria que tem a característica de ter todos os pontos de sua superfície a mesma distância do seu centro? Exatemente. A Esfera.
+
+Na Geometria Analítica a esfera é definida de forma muito semelhante ao do círculo. A diferença é que no lugar de termos apenas duas coordenadas (x e y) teremos três (x, y e z).
+
+Seja $O=(a,b,c)$ o centro da esfera, \textit{R} o seu raio e $P=(x,y,z)$ um ponto genérico sobre a esfera teremos:
+
+\begin{align*}
+ d(P,O)&=R\\
+ \sqrt{(x-a)^2+(y-b)^2+(z-c)^2}&=R\\
+ (x-a)^2+(y-b)^2+(z-c)^2&=R^2
+\end{align*}
+
+Para compreender essa fórmula basta imaginar que as diferenças nos eixos x,y e z são, respectivamente, os valores dos das dimensões de uma caixa. Dessa forma R corresponde a maior diagonal da caixa.
+
+Note que a fórmula da esféra é extremamente semelhante ao do círculo. Acrescentamos apenas um termo, o $(z-c)^2$.
+
+Isso não ocorre por acaso. Sempre que formos acrescentando uma nova dimenção iremos acrescentar um novo termo e teremos a respectiva equação da "esfera" naquela dimenção.
+
+Equivale a dizer que o círculo é uma esféra em dimenção 2. Por que não dizer também que a esfera ser um círculo de dimensão 3.
+
+Iremos tomar como referência hora o círculo, hora a esfera. Mas são equivalentes, com a diferença apenas da dimensão em que existem.
+
+\section{Intersecções}
+
+Note que se tomarmos a equação da esfera (3 dimensões) e a calcularmos no ponto em que $z=0$ teremos precisamente a equação do círculo. Isso significa que a intersecção entre uma esfera e um plano é um círculo. 
+
+Como a esfera é a forma geométrica espacial cujos pontos estão todos a mesma distância de seu centro, então os pontos dessa esfera que estão em um mesmo plano também tem que estar a mesma distância de um ponto.Caso esse ponto seja o centro da esfera teremos o círculo máximo (equador).
+
+\subsection{Intersecção entre duas esferas}
+Note que a intersecção entre 
+
+\subsection{Intersecção entre círculo e reta numérica}
+Podemos então, belo bem da ciência, pegar o círculo (duas dimensões) e verificar qual o seu equivamente em apenas uma dimensão. Por que em uma dimensão? Ora, por que a reta real numérica tem apenas uma dimensão.

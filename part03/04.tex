@@ -1,0 +1,73 @@
+\chapter{Fundamentos da Matemática 2}
+
+\section{Trigonometria}
+
+\begin{equation}\label{4.1}
+   f(x)=a\sin(bx) 
+\end{equation}
+
+
+O valor de $a$ indica a amplitude e $b$ indica a frequência. O inverso da frequência é o período.
+
+\section{Funções Periódicas}
+
+\begin{defi}
+Uma função $f$ é dita periódica se existe um número real positivo $P$ chamado período de $f$, tal que
+
+\begin{equation}\label{4.2}
+f(x)=f(x+P)
+\end{equation}
+\end{defi}
+
+INCLUIR FIGURA 1: UMA FUNÇÃO PERIÓDICA
+
+Observações:
+
+\begin{itemize}
+    \item O período $P$ é o comprimento do intervalo em $x$ necessário para a imagem da função se repetir.
+    \item Segue da \eqref{4.2} que se $f$ é periódica de período $P$, então para qualquer $n$ inteiro positivo temos
+    
+\begin{equation}\label{4.3}
+    f(x)=f(x+nP)
+\end{equation}
+
+ou seja, qualquer múltiplo inteiro positivo $nP$ DE $P$ é um período de $f$. O menor valor de $P$ que satisfaz a equação \eqref{4.2} é chamado \textit{Período Fundamental} de $f$ e será denotado por $T$. Qualquer outro período de $f$ será um múltiplo inteiro do período fundamental.
+
+\item A frequência $F$ de uma função periódica é definida como o inverso de seu período
+
+CONTINUA: MATERIAL SOBRE INTRODUÇÃO AS SÉRIES DE FOURIER
+
+\end{itemize} 
+
+\section{Números Complexos}
+O que é um número complexo? O adjetivo complexo é infeliz, herdado de épocas nas quais a abstração envolvida na compreensão desses números era considerada elevada. Atualmente sabemos que o conceito de número real exige núvel de abstração equivalente e, para exemplificar isso, começamos trabalhando a mais básica ilustração que se pode dar sobre números completos: a ssolução da equação
+
+$$X^2+1=0 \mbox{ ou, o que dá no mesmo, } X^2=-1$$
+
+Sabemos que sobre $\mathbb{R}$ não há solução e somos forçados a definir um ``número'' $i$, satisfazendo $i^2=-1$, que resolve a equação. Agora, ou postulamos a existência desse ``número'' ou invocamos a Álgebra Linear elementar e saimos em busca de um entre de natureza geométrica que seja a solução procurada. Se assim fizermos e olharmos para essa equação sob a forma
+
+$$X \cdot X = -I$$
+
+onde $X$ é uma matriz $2 \times 2$ com coeficientes reais, $I=$
+
+CONTINUAR CAPÍTULO 1 DO LIVRO DE CÁLCULO EM UMA VARIÁVEL COMPLEXA
+
+
+Você compreende a expressão $e^{i\pi}=-1$\footnote{\url{https://goo.gl/MXgoNy}}?
+
+Na expressão em questão temos a participação de quatro elementos, a base do logaritmo natural, o valor de pi e a constante imaginátia dos números complexos.
+
+Quando derivamos uma função exponencial $a^x$ obtemos como resultado um múltiplo dela. Logo para que a derivada de uma função exponencial seja igual a ela própria basta que o valor pelo qual multiplico a minha funçã após a derivada seja $1$. Esse valor em questão é uma expressão que envolve o limite no infinito. Deduza a expressão $e=\lim_{n \to \infty} \left( 1+\dfrac{1}{n} \right)^n$ a partir da derivada da função exponencial pela definição de derivada.
+
+Verifique que $e^x=\lim_{n \to \infty} \left( 1+\dfrac{x}{n} \right)^n$.
+
+Note que agora substituindo o valor de $\pi$ no lugar do $x$ encontraremos algo que se aproxima muito da expressão.
+
+$e^{\pi}=\lim_{n \to \infty} \left( 1+\dfrac{\pi}{n} \right)^n$
+
+Agora estamos a um passo de obter o que queremos.
+
+$e^{i\pi}=\lim_{n \to \infty} \left( 1+i\dfrac{\pi}{n} \right)^n$
+
+Basta verificar o valor do limite acima e obter o resultado $-1$.
+

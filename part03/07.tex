@@ -1,0 +1,235 @@
+
+\chapter{Geometria Euclidiana 1}
+
+\section*{Algumas dicas e curiosidades}
+\begin{itemize}
+    \item Comentar um dos quatro principais princípios da Gestalt na wiki \url{https://pt.wikipedia.org/wiki/Gestalt};
+    \begin{itemize}
+    \item O princípio da pregnância, ou, ainda, boa forma diz que ``Percebemos mais facilmente as boas formas, ou seja, as simples, regulares, simétricas e equilibradas.''
+    \item O princípio ds constância perseptiva em \url{https://pt.wikipedia.org/wiki/Const\%C3\%A2ncia_perceptiva};
+    \end{itemize}
+    
+\item Conheça o livro $11$ da Coleção do Professor de Matemática de título \textit{Geometria Euclidiana Plana};
+\item Conheça o livro \textit{Geometria Euclidiana Plana e construções geométricas} de Eliane Quelho Frota Rezende;
+\item Conheça o livro \textit{Tópicos da História da Matemática} de Tatiana Roque da Coleção do Profmat;
+\item Entre no Blog \url{https://geogriega.blogspot.com.br/} e baixe todos os livros dos Elementos de Euclides com as construções feitas em Slide passo a passo;
+\item Veja quais axiomas e postulados foram utilizados em cada construção em forma de links no portal \url{http://aleph0.clarku.edu/~djoyce/java/elements/elements.html};
+\item Obtenha o resumo da disciplina no link \url{http://goo.gl/RhlqCl};
+\end{itemize}
+
+\section{Ementa e Conteúdos}
+Ementa: Compreensão da importância da axiomática na construção de teorias matemáticas, em especial da consistência da geometria euclidiana. Raciocínio matemático através do exercício de indução e dedução de conceitos geométricos. Leitura e redação de Matemática. A estrutura de um texto matemático: definições, afirmações, proposições, conjecturas, etc. Visualização de objetos planos e espaciais. Desenvolvimento do raciocínio geométrico. 
+
+Conteúdos: A Geometria Euclidiana como modelo de sistematização da Matemática: origem e história. Axiomática da Geometria Euclidiana Plana e introdução à formalização de demonstrações matemáticas. Medição de segmentos e ângulos: grandezas comensuráveis, congruências, distâncias, triângulos especiais. Perpendicularismo e Paralelismo. O Axioma das paralelas: a geometria neutra e as conseqüências do axioma das paralelas. Semelhanças. Círculos, inscrição e circuscrição de polígonos. Polígonos, polígonos regulares. Utilização de recursos de informática na geometria plana. 
+
+\section{Axioma de Incidência e de Ordem}
+
+\noindent{\Large \bf I. Axioma de Incidência}
+
+\begin{description}
+  \item[Axioma I$_{1}$] Existem pontos que pertencem ou não a reta;
+  \item[Axioma I$_{2}$] Dados dois pontos existe uma única reta que os contém;
+  \item[Proposição 1.1] Duas retas distintas ou não se interceptam num único
+    ponto.
+\end{description}
+
+\begin{quote}
+  Intersecção de reta: ou é um único ponto ou é vazio
+\end{quote}
+
+\noindent{\Large \bf II. Axioma de Ordem}
+
+\begin{description}
+  \item[Axioma II$_{1}$] Dados 3 pontos distintos de uma reta um e apenas
+    um deles localiza-se entre os outros dois.
+  \item[Definição 1.2] O conjunto constituído por dois pontos $A$ e $B$ e por
+    todos os pontos que se encontram entre $A$ e $B$ é chamado de
+    \textbf{segmento de reta} $AB$. Os pontos $A$ e $B$ são denominados
+    extremos do segmento.
+  \item[Definição 1.3] Se $A$ e $B$ são pontos distintos, o conjunto
+    constituído pelos pontos do segmento $AB$ e por todos os pontos $C$ tais
+    que
+    $B$ encontra-se entre $A$ e $C$, é chamado de \textbf{semi-reta} de
+    origem $A$ contendo o ponto $B$, representado por $S_{AB}$. O ponto $A$ é
+    denominado origem da semi-reta $S_{AB}$.
+  \item[Proposição 1.4] Para as semi-retas determinada por dois pontos $A$ e
+    $B$ temos:
+
+  \begin{enumerate} \itemsep1pt \parskip0pt \parsep0pt
+    \item $S_{AB} \cup S_{BA}$ é a reta determinada por $A$ e $B$;
+    \item $S_{AB} \cap S_{AB} = AB$.
+  \end{enumerate}
+
+  \item[Axioma II$_{2}$] Dados dois pontos distintos $A$ e $B$ sempre existem
+    um ponto $C$ entre $A$ e $B$ e um ponto $D$ tal que $B$ está entre $A$ e
+    $D$.
+
+  \begin{quote}
+    Quaisquer dois pontos existem uma infinidade de pontos entre eles
+  \end{quote}
+
+  \item[Definição 1.5] Sejam $m$ uma reta e $A$ um ponto que não pertence a
+    $m$. O conjunto constituído pelos pontos de $m$ e por todos os pontos $B$
+    tais que $A$ e $B$ estão num mesmo lado da reta $m$ é chamado de
+    \textbf{semiplano} determinado por $m$ contendo $A$, representado por
+    $P_{mA}$.
+
+  \item[Aximoma II$_{3}$] Uma reta $m$ determina exatamente dois semiplanos
+    distintos cuja interseção é a reta $m$.
+\end{description}
+
+\line(1,0){470}
+
+\begin{description}
+  \item[Ponto] $A$, $B$, $C$, \ldots
+
+  \item[Reta] $a$, $b$, $c$, \ldots
+
+  \item[Segmento de reta]
+  Dados dois pontos distintos $A$ e $B$ numa reta $r$, o conjunto de todos os
+  pontos de $r$, entre $A$ e $B$ é dito segmento de reta. Exemplo: $AB$.
+
+  \item[Semi-reta]
+  Dados uma reta $r$ e um ponto $P$ sobre $r$, cada uma das partes de $r$,
+  constituídas pelo ponto $P$ e todos os outros pontos de $r$ que estão de um
+  mesmo lado do ponto $O$, é dita semireta. Exemplo: $S_{AB}$.
+
+  \item[Semiplano]
+  Uma reta $r$ num plano $\alpha$ , divide o plano em duas partes, cuja
+  interseção é $r$. Cada uma dessas partes é dita semiplano.
+\end{description}
+
+\section{Axiomas Sobre Medição de Segmentos}
+
+\begin{description}
+  \item[Aximoma III$_{1}$] Todo par de pontos do plano corresponde um
+    número\footnote{Coordenada} maior ou igual a zero. Zero se os pontos forem
+    coincidentes.
+
+  \item[Aximoma III$_{2}$] Os pontos de uma reta podem ser colocados em
+    correspondência biunívoca com os números reais, de modo que a diferença
+    entre estes números meça a distância entre os pontos correspondentes.
+    \emph{Régua infinita}.
+
+  \item[Aximoma III$_{3}$] Se o ponto $C$ encontra-se entre $A$ e $B$ então:
+    $\overline{AC} + \overline{CB} = \overline{AB}$.
+
+  \item[Proposição 2.1] Se, numa semi-reta $S_{AB}$, considerarmos um segmento
+    $AC$ com $\overline{AC} < \overline{AB}$, então o ponto $C$ estará entre
+    $A$ e $B$.
+
+  \item[Definição 2.3] Ponto médio do segmento $AB$ a um ponto $C$ deste
+    segmento tal que $\overline{AC} = \overline{CB}$.
+
+  \item[Teorema 2.4] Um segmento tem exatamente um ponto médio.
+\end{description}
+
+\section{Axiomas sobre Medição de Ângulos}
+
+\begin{description}
+  \item[Definição 3.1] Ângulo: figura formada por duas semi-retas com mesma
+    origem.
+
+  \item[Axioma III$_{4}$] Todo ângulo tem uma medida maior ou igual a zero. A
+    medida de um ângulo é zero se e somente se ele é constituiído por duas
+    semi-retas coincidentes.
+
+  \item[Definição 3.2] Diremos que uma semi-reta divide um semi-plano se ela
+    estiver contida no semi-plano e sua origem for um ponto da reta que o
+    determina.
+
+  \item[Axioma III$_{5}$] É possível colocar (correspondência biunívoca)$^1$
+    os números reais entre zero e 180 e as semi-retas da mesma origem que
+    dividem um dado semi-plano, de modo que a diferença entre estes números
+    seja a medida do ângulo formado pelas semi-retas correspondentes.
+
+  \item[Axioma III$_6$] Se uma semi-reta $S_{OC}$ divide um ângulo $A\hat{O}B$,
+    então $A\hat{O}B = A\hat{O}C + C\hat{O}B$
+\end{description}
+
+\line(1,0){470}
+
+\begin{description}
+  \item[Ângulo] Notação: $C\hat{A}B$, $\alpha$, $\hat{A}$.
+  \item[Ângulo raso] igual a $180\degree$.
+  \item[Ângulo reto] igual a $90^o$.
+  \item[Ângulos suplementares] adjacentes com soma $180\degree$.
+  \item[Ângulos opostos pelo vértice (OPV)] são iguais.
+\end{description}
+
+\section{Congruência}
+
+\begin{description}
+  \item[Definição 4.1] Dois segmentos $AB$ e $CD$ são congruentes quando
+    $\overline{AB} = \overline{CD}$; dois ângulos $\hat{A}$ e $\hat{B}$
+    congruentes se têm a mesma medida.
+
+  \item[Definição 4.2] Dois triângulos são congruentes se for possível
+    estabelecer uma correspondência biunívoca entre seus vértices de modo que
+    lados e ângulos correspondentes sejam congruentes.
+
+  \item[Axioma IV] Dados dois triângulos $ABC$ e $EFG$, se $AB = EF$, $AC = EG$
+    e $\hat{A} = \hat{E}$ então são congruentes.
+    \textbf{1º caso de congruência de triângulos - LAL}.
+
+  \item[Teorema 4.3]: Dados dois triângulos $ABC$ e $EFG$, se $AB = EF$,
+    $\hat{A} = \hat{E}$ e $\hat{B} = \hat{F}$ então são congruentes.
+    \textbf{2º caso de congruência de triângulos - ALA}.
+
+  \item[Definição 4.4] Um triângulo é dito \textbf{isósceles} se tem dois lados
+    congruentes. Estes lados chamados de laterais e o terceiro a base.
+
+  \item[Proposição 4.5] Num triângulo isósceles os ângulos da base são
+    congruentes.
+
+  \item[Proposição 4.6] Se num triângulo tem-se dois ângulos congruentes,
+    então o triângulo é isósceles.
+
+  \item[Definição 4.7] Seja um triângulo $ABC$ um triângulo e seja $D$ um ponto
+    da reta que contém $B$ e $C$. O Segmento $AD$ chama-se \textbf{mediada}
+    do triângulo relativo ao lado $BC$, se $D$ for o ponto médio de $BC$.
+
+    O segmento $AD$ chama-se \textbf{bissetriz} do ângulo $\hat{A}$ se a
+    semi-reta $S_{AD}$ divide o ângulo $C\hat{A}B$ em dois ângulos
+    congruentes, isto é, se $C\hat{A}D = D\hat{A}B$.
+
+    O segmento $AD$ chama-se altura do triângulo relativamente ao lado $BC$, se
+    $AD$ for perpendicular a reta que contém $B$ e $C$.
+
+  \item[Proposição 4.8] Num triângulo isósceles a mediana relativamente a base
+    é também bissetriz e altura.
+
+  \item[Teorema 4.9] Se dois triângulos tem três lados correspondentes
+    congruentes então os triângulos são congruentes.
+    \textbf{3º caso de congruência de triângulos - LLL}.
+\end{description}
+
+\line(1,0){470}
+
+\begin{description}
+  \item[$AB = CD$] $AB$ é congruente a $CD$
+  \item[$\overline{A} = \overline{B}$] $\overline{A}$ é congruente a
+    $\overline{B}$
+\end{description}
+
+\section{O Teorema do Ângulo Externo e Suas Consequências}
+
+\begin{description}
+  \item[Teorema 5.2 (Ângulo Externo)] Todo ângulo externo de um triângulo mede mais do que qualquer dos ângulos internos a ele não adjacentes.
+
+  \item[Proposição 5.3] A soma das medidas de quaisquer dois ângulos internos de um triângulo é menor do que $180\degree$.
+
+  \item[Corolário 5.4] Todo ângulo possui pelo menos dois ângulos internos agudos.
+
+  \item[Corolário 5.5] Se duas retas distintas $m$ e $n$ são perpendiculares a uma terceira, então $m$ e $n$ não se interceptam.
+
+  \item[Definição 5.6] Duas retas que não se interceptam são ditas paralelas.
+
+  \item[Proposição 5.7] Por um ponto fora de uma reta passa uma e somente uma reta dada.
+
+  \item[Proposição 5.8] Se dois lados de um triângulo não são congruentes então seus ângulos opostos não são congruentes e o maior ângulo é oposto ao maior lado.
+
+  \item[Teorema 5.10] Em todo triânglo, a soma dos comprimentos de dois lados é maior do que o comprimento do terceiro lado.
+
+\end{description}
+

@@ -1,0 +1,66 @@
+\chapter{Intervalos}
+
+Os intervalos são basicamente subconjunto dos números reais. Como os números reais são densos, ou seja, entre dois números reais sempre existe um outro número real, logo entre os números 2 e 3 existem infinitos números reais. 
+
+Os intervalos podem ser dos seguintes tipos:
+
+\begin{figure}[h]
+ \centering
+\begin{tikzpicture}[scale=4]
+\draw (-1,0) -- (1,0);
+\coordinate[label=below:$a$] (A) at (-.5,0);
+\coordinate[label=below:$b$] (B) at (.5,0);
+\draw[blue, thick] (A) -- (B);
+\filldraw[blue] (A) circle (.5pt) node[anchor=west];
+\filldraw[blue] (B) circle (.5pt) node[anchor=west];
+\filldraw[white] (A) circle (.48pt) node[anchor=west];
+\filldraw[white] (B) circle (.48pt) node[anchor=west];
+\end{tikzpicture}
+\caption{Intervalo aberto: $a<x<b$}
+ \label{fig:my_label}
+\end{figure}
+
+\begin{figure}[h]
+ \centering
+\begin{tikzpicture}[scale=4]
+\draw (-1,0) -- (1,0);
+\coordinate[label=below:$a$] (A) at (-.5,0);
+\coordinate[label=below:$b$] (B) at (.5,0);
+\draw[blue, thick] (A) -- (B);
+\filldraw[blue] (A) circle (.5pt) node[anchor=west];
+\filldraw[blue] (B) circle (.5pt) node[anchor=west];
+\end{tikzpicture}
+ \caption{Intervalo fechado: $a\leq x \leq b$}
+ \label{fig:my_label}
+\end{figure}
+
+\begin{figure}[h]
+ \centering
+\begin{tikzpicture}[scale=4]
+\draw (-1,0) -- (1,0);
+\coordinate[label=below:$a$] (A) at (-.5,0);
+%\coordinate[label=below:$b$] (B) at (.5,0);
+\draw[blue, thick] (A) -- (1,0);
+\filldraw[blue] (A) circle (.5pt) node[anchor=west];
+%\filldraw[blue] (B) circle (.5pt) node[anchor=west];
+\filldraw[white] (A) circle (.48pt) node[anchor=west];
+%\filldraw[white] (B) circle (.48pt) node[anchor=west];
+\end{tikzpicture}
+\caption{Intervalo aberto: $a<x$}
+ \label{fig:my_label}
+\end{figure}
+
+\begin{figure}[h]
+ \centering
+\begin{tikzpicture}[scale=4]
+\draw (-1,0) -- (1,0);
+\coordinate[label=below:$a$] (A) at (-.5,0);
+\coordinate[label=below:$b$] (B) at (.5,0);
+\draw[blue, thick] (A) -- (B);
+\filldraw[blue] (A) circle (.5pt) node[anchor=west];
+\filldraw[blue] (B) circle (.5pt) node[anchor=west];
+\end{tikzpicture}
+ \caption{Intervalo fechado: $a\leq x \leq b$}
+ \label{fig:my_label}
+\end{figure}
+
